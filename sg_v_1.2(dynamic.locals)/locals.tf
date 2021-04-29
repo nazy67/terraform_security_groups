@@ -11,3 +11,12 @@ locals {
     cidr_blocks = ["0.0.0.0/0"],
   }]
 }
+
+# comment when you configure your tags in variables.tf
+locals {
+  tags = {
+    Name = "web_sg"
+    Environment = "dev"
+    Project     = "application"
+  }
+}
