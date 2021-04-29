@@ -1,9 +1,3 @@
-# This security group contains a "dynamic block"  which creates 2 inbound rules 
-# 22 and 80. In variables.tf we gave the definition for each rule and "for_each"
-# meta-argument is looping and getting correct data for each security roup rule. 
-# Which makes our security group reusable, where all the values in variables.tf
-# can be changed depending of the ports you need. 
-
 resource "aws_security_group" "web_sg" {
   name        = "${var.env}_web_sg"
   description = "allow inbound/outbound traffic"
