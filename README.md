@@ -87,7 +87,6 @@ variable "web_ingress_ports" {
 #   }
 #  ]
 }
-
 ```
 
 You can either keep as a default value security group values in ```variables.tf``` or move it to ```dev.tfvars``` under ```web_ingress_ports```, both will work.
